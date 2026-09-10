@@ -1,4 +1,5 @@
 import 'package:exploraclima/app.dart';
+import 'package:exploraclima/presentation/home/home_screen.dart';
 import 'package:exploraclima/state/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -27,7 +28,24 @@ void main() {
     await tester.pump();
 
     expect(find.text('ExploraClima'), findsWidgets);
+
+    final homeScrollable = find.descendant(
+      of: find.byType(HomeScreen),
+      matching: find.byType(Scrollable),
+    );
+
+    await tester.scrollUntilVisible(
+      find.text('Comparador climático'),
+      300,
+      scrollable: homeScrollable,
+    );
     expect(find.text('Comparador climático'), findsWidgets);
+
+    await tester.scrollUntilVisible(
+      find.text('Huella de carbono'),
+      300,
+      scrollable: homeScrollable,
+    );
     expect(find.text('Huella de carbono'), findsWidgets);
   });
 }
