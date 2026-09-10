@@ -5,6 +5,7 @@ import '../../core/theme/app_palette.dart';
 import '../../core/utils/format.dart';
 import '../../core/widgets/common.dart';
 import '../../data/models/attempt.dart';
+import '../../data/models/climate_period.dart';
 import '../../state/providers.dart';
 import '../compare/attempts_compare_screen.dart';
 import 'attempt_detail_screen.dart';

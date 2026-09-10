@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/common.dart';
+import '../../data/models/climate_period.dart';
 import '../../data/models/decision.dart';
 import '../../data/models/indicator.dart';
 import '../../domain/scenario_engine.dart';
