@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Marfil: pantalla de arranque en modo claro. -->
+    <color name="launch_background">#F7F2E8</color>
+    <!-- Azul noche: fondo del icono adaptativo. -->
+    <color name="ic_launcher_background">#101C33</color>
+</resources>
